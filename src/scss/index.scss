@@ -1,0 +1,11 @@
+@import "~ava30-frontend-componentslib/src/theme";
+
+.right-body {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+
+  & > .link {
+    width: 80px;
+  }
+}
