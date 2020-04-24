@@ -1,10 +1,15 @@
 {
-  "name": "mf-root",
+  "name": "@00jfb00/mf-root",
   "author": "Julio Brandao",
-  "repository": "git@bitbucket.org:00jfb00/mf-root.git",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/00jfb00/mf-root.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "license": "ISC",
   "version": "1.0.0",
-  "description": "",
   "scripts": {
     "lint": "eslint src",
     "start": "webpack-dev-server",
@@ -86,5 +91,7 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged && concurrently yarn:test yarn:lint"
     }
-  }
+  },
+  "main": "dist/mf-root.js",
+  "description": ""
 }
